@@ -1,0 +1,66 @@
+# ============================================================================
+# REQUIREMENTS.TXT - Proyecto Predicción Energética Colombia 2022-2030
+# ============================================================================
+# Autor: [Tu nombre]
+# Fecha: 2025-11-12
+# Python: >= 3.8
+# 
+# Instalación: pip install -r requirements.txt
+# ============================================================================
+
+# === LIBRERÍAS PRINCIPALES ===
+
+# Manipulación de datos
+pandas>=2.0.0,<3.0.0
+numpy>=1.24.0,<2.0.0
+
+# Modelado predictivo - Series temporales
+prophet>=1.1.5,<2.0.0
+
+# Machine Learning
+scikit-learn>=1.3.0,<2.0.0
+
+# Visualización
+matplotlib>=3.7.0,<4.0.0
+
+# Solicitudes HTTP (para descarga de datos)
+requests>=2.31.0,<3.0.0
+
+# === JUPYTER NOTEBOOK (si trabajas con notebooks) ===
+ipykernel>=6.25.0,<7.0.0
+jupyter>=1.0.0,<2.0.0
+notebook>=7.0.0,<8.0.0
+
+# === DEPENDENCIAS OPCIONALES (recomendadas) ===
+
+# Mejora visualización en notebooks
+ipywidgets>=8.1.0,<9.0.0
+
+# Manejo de fechas y festivos (usado por Prophet)
+holidays>=0.35,<1.0.0
+
+# Procesamiento numérico optimizado (Prophet dependency)
+pystan>=3.0.0,<4.0.0
+
+# ============================================================================
+# NOTAS DE INSTALACIÓN
+# ============================================================================
+# 
+# 1. Crea un entorno virtual (recomendado):
+#    python -m venv .venv
+#    source .venv/bin/activate  # En Windows: .venv\Scripts\activate
+#
+# 2. Instala las dependencias:
+#    pip install -r requirements.txt
+#
+# 3. Registra el kernel en Jupyter (si usas notebooks):
+#    python -m ipykernel install --user --name=prediccion-energia --display-name "Python (Predicción Energía)"
+#
+# 4. Si hay problemas con Prophet en Windows:
+#    - Instala conda: https://docs.conda.io/en/latest/miniconda.html
+#    - Ejecuta: conda install -c conda-forge prophet
+#
+# 5. Verifica instalación:
+#    python -c "import pandas, prophet, sklearn, ipykernel; print('✓ Todo instalado correctamente')"
+#
+# ============================================================================
